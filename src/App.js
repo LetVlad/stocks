@@ -32,6 +32,7 @@ const App = () => {
             <button className="primary" onClick={() => setStockData(TIME_INTERVAL.MINUTE)}>1 Minute</button>
             <button className="primary" onClick={() => setStockData(TIME_INTERVAL.MINUTES, 5)}>5 Minutes</button>
             <button className="primary" onClick={() => setStockData(TIME_INTERVAL.HOUR)}>1 Hour</button>
+            <button className="primary" onClick={() => setStockData(TIME_INTERVAL.HOUR, 168)}>1 week</button>
             <Chart options={options} highcharts={Highcharts} />
         </div>
     )
