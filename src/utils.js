@@ -14,7 +14,16 @@ export const getChartOptions = (categories, data) => {
         chart: {
             backgroundColor: '#FCFFC5',
         },
-        title: { text: '' },
+        title: {
+            text: 'Apple Inc',
+            align: 'left',
+            x: 70
+        },
+        subtitle: {
+            text: 'AAPL (Nasdaq - US)',
+            align: 'left',
+            x: 50
+        },
         series: [{ data, name: 'CLose', cursor: 'crosshair' }],
         legend: {
             enabled: false,
